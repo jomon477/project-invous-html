@@ -1,0 +1,1375 @@
+import React from 'react'
+
+import styled from 'styled-components'
+
+import Header from './header'
+import Label from './label'
+import ServiceCard from './service-card'
+import SecondaryButton from './secondary-button'
+import Footer from './footer'
+import { projectStyleVariants, TOKENS } from '.style'
+
+const Home = () => {
+  return (
+    <Container>
+      <Hero>
+        <Bg></Bg>
+        <Header></Header>
+        <Container01>
+          <Container02>
+            <Text>Powered by Invous Kcmt</Text>
+            <Text01>
+              <span>T</span>
+              <span>
+                his webpage is a submitted as a project of web designing
+                bootcamp in kristu jyoti college of management and technology
+              </span>
+            </Text01>
+          </Container02>
+          <Image alt="image" src="/playground_assets/gray-vector.svg" />
+          <Image01 alt="image" src="/playground_assets/white-vector.svg" />
+        </Container01>
+      </Hero>
+      <Section1>
+        <Container03>
+          <Container04>
+            <Text04>heading 2</Text04>
+            <Text05 projVariant="healine">dummy Heading</Text05>
+            <Text06 projVariant="textXL">
+              <Text07></Text07>
+            </Text06>
+          </Container04>
+          <CardsContainer>
+            <Card1>
+              <Container05>
+                <Icon viewBox="0 0 1024 1024">
+                  <path d="M639.403 658.091l32 241.152-137.429-82.475c-13.269-7.851-29.995-8.363-43.904 0l-137.429 82.475 32.043-241.109c39.296 15.829 82.304 24.533 127.317 24.533s88.021-8.747 127.403-24.576zM654.165 554.283c-2.475 1.28-4.821 2.773-6.955 4.48-39.253 24.448-85.547 38.571-135.211 38.571-70.699 0-134.656-28.587-181.035-74.965s-74.965-110.336-74.965-181.035 28.587-134.656 74.965-181.035 110.336-74.965 181.035-74.965 134.656 28.587 181.035 74.965 74.965 110.336 74.965 181.035-28.587 134.656-74.965 181.035c-11.861 11.861-24.875 22.571-38.869 31.915zM304.64 612.48l-48.256 363.221c-3.115 23.339 13.312 44.8 36.693 47.915 9.984 1.323 19.669-0.939 27.563-5.717l191.36-114.816 191.403 114.816c20.224 12.117 46.421 5.589 58.539-14.635 5.205-8.661 6.955-18.389 5.717-27.563l-48.213-363.307c11.947-9.173 23.296-19.115 33.92-29.739 61.696-61.696 99.968-147.072 99.968-241.323s-38.272-179.627-99.968-241.365-147.115-99.968-241.365-99.968-179.627 38.272-241.365 99.968-99.968 147.115-99.968 241.365 38.272 179.627 99.968 241.365c10.667 10.667 22.016 20.608 33.963 29.781z"></path>
+                </Icon>
+              </Container05>
+              <Text08 projVariant="textXL">dummy text with icon</Text08>
+              <Text09>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry&apos;s
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </Text09>
+            </Card1>
+            <Card2>
+              <Container06>
+                <Icon02 viewBox="0 0 1097.142857142857 1024">
+                  <path d="M731.429 859.429c0 9.714-8.571 18.286-18.286 18.286h-548.571c-21.143 0-18.286-22.286-18.286-36.571v-329.143h-109.714c-20 0-36.571-16.571-36.571-36.571 0-8.571 2.857-17.143 8.571-23.429l182.857-219.429c6.857-8 17.143-12.571 28-12.571s21.143 4.571 28 12.571l182.857 219.429c5.714 6.286 8.571 14.857 8.571 23.429 0 20-16.571 36.571-36.571 36.571h-109.714v219.429h329.143c5.143 0 10.857 2.286 14.286 6.286l91.429 109.714c2.286 3.429 4 8 4 12zM1097.143 621.714c0 8.571-2.857 17.143-8.571 23.429l-182.857 219.429c-6.857 8-17.143 13.143-28 13.143s-21.143-5.143-28-13.143l-182.857-219.429c-5.714-6.286-8.571-14.857-8.571-23.429 0-20 16.571-36.571 36.571-36.571h109.714v-219.429h-329.143c-5.143 0-10.857-2.286-14.286-6.857l-91.429-109.714c-2.286-2.857-4-7.429-4-11.429 0-9.714 8.571-18.286 18.286-18.286h548.571c21.143 0 18.286 22.286 18.286 36.571v329.143h109.714c20 0 36.571 16.571 36.571 36.571z"></path>
+                </Icon02>
+              </Container06>
+              <Text10 projVariant="textXL">another one</Text10>
+              <Text11>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry&apos;s
+              </Text11>
+            </Card2>
+            <Card3>
+              <Container07>
+                <Icon04 viewBox="0 0 1024 1024">
+                  <path d="M636 938h-6q-92-24-158-90-38-38-65-103t-27-119q0-52 38-89t92-37 93 37 39 89q0 34 25 58t63 24 64-24 26-58q0-120-91-206t-219-86q-92 0-168 47t-114 125q-24 50-24 120 0 80 28 154 6 20-14 26t-26-12q-32-82-32-168 0-78 30-138 42-90 129-144t191-54q146 0 249 99t103 237q0 52-39 88t-93 36-92-36-38-88q0-34-26-59t-64-25-63 25-25 59q0 112 80 192 56 56 140 78 18 2 14 26-4 16-20 16zM530 626q0 74 55 128t137 54q4 0 18-2t23-2 18 3 11 13q4 22-18 26-24 4-52 4-80 0-132-38-102-70-102-186 0-22 22-22 20 0 20 22zM416 930q-8 0-14-6-54-54-86-114-46-80-46-184 0-94 71-162t171-68 171 68 71 162q0 20-22 20t-22-20q0-78-58-133t-140-55-140 55-58 133q0 96 38 164 26 46 80 104 16 14 0 30-6 6-16 6zM150 414q-22 0-22-20 0-4 4-12 64-92 160-140 100-52 220-52t220 52q98 48 160 138 4 8 4 12 0 14-16 20t-24-8q-60-82-144-124-92-46-200-47t-200 47q-90 46-146 126-6 8-16 8zM760 190q-8 0-10-2-118-60-238-60-130 0-238 60-10 6-20 0t-10-18q0-14 10-20 116-64 258-64 130 0 258 64 18 10 8 28-8 12-18 12z"></path>
+                </Icon04>
+              </Container07>
+              <Text12 projVariant="textXL">fingerprint</Text12>
+              <Text13>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry&apos;s
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </Text13>
+            </Card3>
+          </CardsContainer>
+          <WorkWithUs>
+            <Container08>
+              <Container09>
+                <Icon06 viewBox="0 0 1024 1024">
+                  <path d="M384 554q64 0 140 18t139 60 63 94v128h-684v-128q0-52 63-94t139-60 140-18zM640 512q-26 0-56-10 56-66 56-160 0-38-16-86t-40-76q30-10 56-10 70 0 120 51t50 121-50 120-120 50zM214 342q0-70 50-121t120-51 120 51 50 121-50 120-120 50-120-50-50-120zM712 560q106 16 188 59t82 107v128h-172v-128q0-98-98-166z"></path>
+                </Icon06>
+              </Container09>
+              <Text14 projVariant="healine">dummy text 3</Text14>
+              <Text15>
+                <Text16></Text16>
+                <br></br>
+              </Text15>
+              <Text17>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don&apos;t look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there
+              </Text17>
+            </Container08>
+            <Container10>
+              <Container11>
+                <Image02 alt="image" src="/playground_assets/blue_wave.svg" />
+              </Container11>
+              <Container12>
+                <Text18 projVariant="healine">
+                  <Text19>Top Notch Services</Text19>
+                  <br></br>
+                </Text18>
+                <Text20>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry&apos;s
+                  standard dummy text ever
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </Text20>
+              </Container12>
+            </Container10>
+          </WorkWithUs>
+        </Container03>
+        <Image03 alt="image" src="/playground_assets/white-vector.svg" />
+      </Section1>
+      <Section2>
+        <Container13>
+          <Label text="WITH BURNED SOLES​"></Label>
+          <Text21 projVariant="text2XL">
+            <Text22>You need to fight like David with Goliath</Text22>
+            <br></br>
+          </Text21>
+          <Text23 projVariant="textXL">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don&apos;t look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there
+          </Text23>
+        </Container13>
+        <GrowingCompanySection>
+          <Image04
+            alt="image"
+            src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+          />
+          <Container14>
+            <Container15>
+              <Icon08 viewBox="0 0 967.4605714285714 1024">
+                <path d="M822.857 256c0-30.286-24.571-54.857-54.857-54.857s-54.857 24.571-54.857 54.857 24.571 54.857 54.857 54.857 54.857-24.571 54.857-54.857zM950.857 91.429c0 189.714-52.571 316-188 452-33.143 32.571-70.857 66.286-111.429 100.571l-11.429 216.571c-0.571 5.714-4 11.429-9.143 14.857l-219.429 128c-2.857 1.714-5.714 2.286-9.143 2.286-4.571 0-9.143-1.714-13.143-5.143l-36.571-36.571c-4.571-5.143-6.286-12-4.571-18.286l48.571-157.714-160.571-160.571-157.714 48.571c-1.714 0.571-3.429 0.571-5.143 0.571-4.571 0-9.714-1.714-13.143-5.143l-36.571-36.571c-5.714-6.286-6.857-15.429-2.857-22.286l128-219.429c3.429-5.143 9.143-8.571 14.857-9.143l216.571-11.429c34.286-40.571 68-78.286 100.571-111.429 142.857-142.286 252-188 450.857-188 10.286 0 19.429 8 19.429 18.286z"></path>
+              </Icon08>
+            </Container15>
+            <Text24 projVariant="healine">A Workspace image</Text24>
+            <Text25>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500s, when an
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </Text25>
+            <Container16>
+              <Container17>
+                <Icon10 viewBox="0 0 1024 1024">
+                  <path d="M636 938h-6q-92-24-158-90-38-38-65-103t-27-119q0-52 38-89t92-37 93 37 39 89q0 34 25 58t63 24 64-24 26-58q0-120-91-206t-219-86q-92 0-168 47t-114 125q-24 50-24 120 0 80 28 154 6 20-14 26t-26-12q-32-82-32-168 0-78 30-138 42-90 129-144t191-54q146 0 249 99t103 237q0 52-39 88t-93 36-92-36-38-88q0-34-26-59t-64-25-63 25-25 59q0 112 80 192 56 56 140 78 18 2 14 26-4 16-20 16zM530 626q0 74 55 128t137 54q4 0 18-2t23-2 18 3 11 13q4 22-18 26-24 4-52 4-80 0-132-38-102-70-102-186 0-22 22-22 20 0 20 22zM416 930q-8 0-14-6-54-54-86-114-46-80-46-184 0-94 71-162t171-68 171 68 71 162q0 20-22 20t-22-20q0-78-58-133t-140-55-140 55-58 133q0 96 38 164 26 46 80 104 16 14 0 30-6 6-16 6zM150 414q-22 0-22-20 0-4 4-12 64-92 160-140 100-52 220-52t220 52q98 48 160 138 4 8 4 12 0 14-16 20t-24-8q-60-82-144-124-92-46-200-47t-200 47q-90 46-146 126-6 8-16 8zM760 190q-8 0-10-2-118-60-238-60-130 0-238 60-10 6-20 0t-10-18q0-14 10-20 116-64 258-64 130 0 258 64 18 10 8 28-8 12-18 12z"></path>
+                </Icon10>
+              </Container17>
+              <Text26>icons in pages</Text26>
+            </Container16>
+            <Container18>
+              <Container19>
+                <Icon12 viewBox="0 0 1024 1024">
+                  <path d="M917.806 357.076c-22.21-30.292-53.174-65.7-87.178-99.704s-69.412-64.964-99.704-87.178c-51.574-37.82-76.592-42.194-90.924-42.194h-368c-44.114 0-80 35.888-80 80v736c0 44.112 35.886 80 80 80h608c44.112 0 80-35.888 80-80v-496c0-14.332-4.372-39.35-42.194-90.924zM785.374 302.626c30.7 30.7 54.8 58.398 72.58 81.374h-153.954v-153.946c22.982 17.78 50.678 41.878 81.374 72.572v0zM896 944c0 8.672-7.328 16-16 16h-608c-8.672 0-16-7.328-16-16v-736c0-8.672 7.328-16 16-16 0 0 367.956-0.002 368 0v224c0 17.672 14.324 32 32 32h224v496z"></path>
+                  <path d="M602.924 42.196c-51.574-37.822-76.592-42.196-90.924-42.196h-368c-44.112 0-80 35.888-80 80v736c0 38.632 27.528 70.958 64 78.39v-814.39c0-8.672 7.328-16 16-16h486.876c-9.646-7.92-19.028-15.26-27.952-21.804z"></path>
+                </Icon12>
+              </Container19>
+              <Text27>page icon</Text27>
+            </Container18>
+            <Container20>
+              <Container21>
+                <Icon15 viewBox="0 0 1024.5851428571427 1024">
+                  <path d="M1008 6.286c12 8.571 17.714 22.286 15.429 36.571l-146.286 877.714c-1.714 10.857-8.571 20-18.286 25.714-5.143 2.857-11.429 4.571-17.714 4.571-4.571 0-9.143-1.143-13.714-2.857l-301.143-122.857-170.286 186.857c-6.857 8-16.571 12-26.857 12-4.571 0-9.143-0.571-13.143-2.286-14.286-5.714-23.429-19.429-23.429-34.286v-258.286l-269.714-110.286c-13.143-5.143-21.714-17.143-22.857-31.429-1.143-13.714 6.286-26.857 18.286-33.714l950.857-548.571c12-7.429 27.429-6.857 38.857 1.143zM812.571 862.857l126.286-756-819.429 472.571 192 78.286 493.143-365.143-273.143 455.429z"></path>
+                </Icon15>
+              </Container21>
+              <Text28>message icon</Text28>
+            </Container20>
+          </Container14>
+        </GrowingCompanySection>
+        <Text29 projVariant="healine">Team Dummy Images</Text29>
+        <Image05 alt="image" src="/playground_assets/gray-vector.svg" />
+        <Image06
+          src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwfHx0ZWFtfGVufDB8fHx8MTYzODg3NDY0MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=400"
+          alt="image"
+        />
+        <Image07
+          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDM5fHx0ZWFtfGVufDB8fHx8MTYzODg3NDY0MQ&amp;ixlib=rb-1.2.1&amp;w=400"
+          alt="image"
+        />
+        <Image08
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDM3fHx0ZWFtfGVufDB8fHx8MTYzODg3NDY0MQ&amp;ixlib=rb-1.2.1&amp;w=400"
+          alt="image"
+        />
+        <Image09
+          src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDM4fHx0ZWFtfGVufDB8fHx8MTYzODg3NDY0MQ&amp;ixlib=rb-1.2.1&amp;w=400"
+          alt="image"
+        />
+      </Section2>
+      <Section3>
+        <Container22>
+          <Text30 projVariant="textSM">
+            <span>ON THE COASTLINE</span>
+          </Text30>
+          <Text32 projVariant="healine">dummt teams texts</Text32>
+          <Text33 projVariant="textXL">
+            <Text34>
+              We&apos;re waiting for the weather to warm up so that we can go to
+              the coastline. We really miss the summertime, our second home the
+              coastline.
+            </Text34>
+            <br></br>
+          </Text33>
+          <Services>
+            <ServiceCard></ServiceCard>
+            <Container23>
+              <Container24>
+                <Icon17 viewBox="0 0 1024 1024">
+                  <path d="M832 192v-128h-640v128h-192v128c0 106.038 85.958 192 192 192 20.076 0 39.43-3.086 57.62-8.802 46.174 66.008 116.608 113.796 198.38 130.396v198.406h-64c-70.694 0-128 57.306-128 128h512c0-70.694-57.306-128-128-128h-64v-198.406c81.772-16.6 152.206-64.386 198.38-130.396 18.19 5.716 37.544 8.802 57.62 8.802 106.042 0 192-85.962 192-192v-128h-192zM192 436c-63.962 0-116-52.038-116-116v-64h116v64c0 40.186 7.43 78.632 20.954 114.068-6.802 1.246-13.798 1.932-20.954 1.932zM948 320c0 63.962-52.038 116-116 116-7.156 0-14.152-0.686-20.954-1.932 13.524-35.436 20.954-73.882 20.954-114.068v-64h116v64z"></path>
+                </Icon17>
+              </Container24>
+              <Text35 projVariant="textXL">dummy</Text35>
+              <Text36>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </Text36>
+            </Container23>
+            <Container25>
+              <Container26>
+                <Icon19 viewBox="0 0 1024 1024">
+                  <path d="M726 726v-172h-86v172h86zM554 726v-428h-84v428h84zM384 726v-300h-86v300h86zM810 128q34 0 60 26t26 60v596q0 34-26 60t-60 26h-596q-34 0-60-26t-26-60v-596q0-34 26-60t60-26h596z"></path>
+                </Icon19>
+              </Container26>
+              <Text37 projVariant="textXL">
+                <span>dummy 3</span>
+              </Text37>
+              <Text39>
+                Some quick example text to build on the card title and make up
+                the bulk of the card&apos;s content.
+              </Text39>
+            </Container25>
+          </Services>
+          <Contact>
+            <Text40>Type in the bellow form</Text40>
+            <Text41 projVariant="textXL">dummy form page.</Text41>
+            <Form>
+              <Text42>Want to work with us?</Text42>
+              <Text43 projVariant="textXL">
+                complete if you have any queries related to this
+              </Text43>
+              <Text44 projVariant="textXS">FULL NAME</Text44>
+              <Textinput
+                type="text"
+                placeholder="Full Name"
+                projVariant="textSM"
+                projVariant="input"
+              />
+              <Text45 projVariant="textXS">EMAIL</Text45>
+              <Textinput1
+                type="text"
+                placeholder="Email"
+                projVariant="textSM"
+                projVariant="input"
+              />
+              <Text46 projVariant="textXS">MESSAGE</Text46>
+              <Textarea
+                cols="80"
+                rows="4"
+                disabled="true"
+                placeholder="Type a message"
+                projVariant="textSM"
+                projVariant="textarea"
+              ></Textarea>
+              <Container27>
+                <Link href="mailto:jomunchacko@gmail.com?subject=DEtails">
+                  <Component3
+                    button="Send message"
+                    rootClassName="rootClassName"
+                  ></Component3>
+                </Link>
+              </Container27>
+            </Form>
+          </Contact>
+        </Container22>
+        <Image10 alt="image" src="/playground_assets/gray-vector.svg" />
+      </Section3>
+      <Footer></Footer>
+    </Container>
+  )
+}
+
+export default Home
+
+const Container = styled('div')({
+  width: '100%',
+  height: 'auto',
+  display: 'flex',
+  'min-height': '100vh',
+  'align-items': 'flex-start',
+  'flex-direction': 'column',
+})
+
+const Hero = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  height: '80vh',
+  display: 'flex',
+  position: 'relative',
+  'align-items': 'center',
+  'flex-direction': 'column',
+  'background-size': 'cover',
+  'background-image':
+    'url("/playground_assets/programming-code-wqhd-1440p-wallpaper-1500h.jpg")',
+})
+
+const Bg = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  opacity: '0.7',
+  position: 'absolute',
+  'align-items': 'flex-start',
+  'flex-direction': 'column',
+  'background-color': TOKENS.DlColorGrayBlack,
+})
+
+const Container01 = styled('div')({
+  left: '-7px',
+  width: '100%',
+  bottom: '-24px',
+  height: '100%',
+  display: 'flex',
+  position: 'absolute',
+  'align-items': 'center',
+  'flex-direction': 'column',
+  'justify-content': 'center',
+})
+
+const Container02 = styled('div')({
+  display: 'flex',
+  'align-items': 'center',
+  'padding-left': TOKENS.DlSpaceSpaceTripleunit,
+  'padding-right': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  '@media(max-width: 479px)': {
+    'padding-left': TOKENS.DlSpaceSpaceDoubleunit,
+    'padding-right': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+})
+
+const Text = styled('h1')({
+  color: TOKENS.DlColorGrayWhite,
+  'text-align': 'center',
+})
+
+const Text01 = styled('span')({
+  color: TOKENS.DlColorGray900,
+  'max-width': '600px',
+  'text-align': 'center',
+})
+
+const Image = styled('img')({
+  top: 'auto',
+  left: 'auto',
+  right: '0px',
+  width: '100%',
+  bottom: '-1px',
+  position: 'absolute',
+  'object-fit': 'cover',
+})
+
+const Image01 = styled('img')({
+  left: 'auto',
+  right: '0px',
+  width: '100%',
+  bottom: '0px',
+  display: 'none',
+  position: 'absolute',
+  'object-fit': 'cover',
+})
+
+const Section1 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  position: 'relative',
+  'align-items': 'center',
+  'padding-top': TOKENS.DlSpaceSpaceTripleunit,
+  'padding-left': TOKENS.DlSpaceSpaceDoubleunit,
+  'padding-right': TOKENS.DlSpaceSpaceDoubleunit,
+  'flex-direction': 'column',
+  'padding-bottom': TOKENS.DlSpaceSpaceFiveunits,
+  'background-color': TOKENS.DlColorPimary900,
+  '@media(max-width: 767px)': {
+    'padding-left': TOKENS.DlSpaceSpaceDoubleunit,
+    'padding-right': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+})
+
+const Container03 = styled('div')({
+  width: '100%',
+  display: 'flex',
+  'max-width': '1320px',
+  'align-items': 'center',
+  'flex-direction': 'column',
+})
+
+const Container04 = styled('div')({
+  width: '66%',
+  display: 'flex',
+  'align-items': 'center',
+  'padding-left': TOKENS.DlSpaceSpaceUnit,
+  'padding-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  '@media(max-width: 767px)': {
+    width: '100%',
+  },
+})
+
+const Text04 = styled('h6')({
+  color: TOKENS.DlColorPimary500,
+  'font-size': '0.875em',
+  'font-style': 'normal',
+  'font-weight': '700',
+  'text-transform': 'uppercase',
+})
+
+const Text05 = styled('h3')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary400,
+  'text-align': 'center',
+})
+
+const Text06 = styled('span')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary700,
+  'text-align': 'center',
+  'margin-bottom': '0.25rem',
+})
+
+const Text07 = styled('span')({
+  display: 'inline',
+  'font-weight': '400',
+  'white-space': 'normal',
+  'background-color': 'rgb(241, 245, 249)',
+})
+
+const CardsContainer = styled('div')({
+  display: 'flex',
+  'margin-top': TOKENS.DlSpaceSpaceTripleunit,
+  'align-items': 'flex-start',
+  'padding-top': TOKENS.DlSpaceSpaceTripleunit,
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'row',
+  'padding-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  'justify-content': 'space-between',
+  '@media(max-width: 991px)': {
+    'align-items': 'center',
+    'flex-direction': 'column',
+  },
+})
+
+const Card1 = styled('div')({
+  flex: '0 0 auto',
+  width: '30%',
+  display: 'flex',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRadius50,
+  'flex-direction': 'column',
+  'background-color': TOKENS.DlColorGrayWhite,
+  '@media(max-width: 991px)': {
+    width: '90%',
+    'margin-bottom': TOKENS.DlSpaceSpaceFiveunits,
+  },
+  '@media(max-width: 479px)': {
+    'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  },
+})
+
+const Container05 = styled('div')({
+  flex: '0 0 auto',
+  width: '3rem',
+  height: '3rem',
+  display: 'flex',
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-image': 'linear-gradient(180deg, #f87171, #dc2626)',
+})
+
+const Icon = styled('svg')({
+  fill: TOKENS.DlColorGrayWhite,
+  width: '24px',
+  height: '24px',
+})
+
+const Text08 = styled('h6')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary100,
+  'margin-top': TOKENS.DlSpaceSpaceUnit,
+  'text-align': 'center',
+  'font-family': 'Open Sans',
+})
+
+const Text09 = styled('span')({
+  color: TOKENS.DlColorSecondary700,
+  'font-size': '1rem',
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  'text-align': 'center',
+  'font-family': 'Open Sans',
+  'line-height': '1.625rem',
+  '@media(max-width: 479px)': {
+    'text-align': 'left',
+  },
+})
+
+const Card2 = styled('div')({
+  flex: '0 0 auto',
+  width: '30%',
+  display: 'flex',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRadius50,
+  'flex-direction': 'column',
+  'background-color': TOKENS.DlColorGrayWhite,
+  '@media(max-width: 991px)': {
+    width: '90%',
+    'margin-bottom': TOKENS.DlSpaceSpaceFiveunits,
+  },
+  '@media(max-width: 479px)': {
+    'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  },
+})
+
+const Container06 = styled('div')({
+  flex: '0 0 auto',
+  width: '3rem',
+  height: '3rem',
+  display: 'flex',
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-image': 'linear-gradient(180deg, #38bdf8, #0284c7)',
+})
+
+const Icon02 = styled('svg')({
+  fill: TOKENS.DlColorGrayWhite,
+  width: '24px',
+  height: '24px',
+})
+
+const Text10 = styled('h6')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary100,
+  'margin-top': TOKENS.DlSpaceSpaceUnit,
+  'text-align': 'center',
+  'font-family': 'Open Sans',
+})
+
+const Text11 = styled('span')({
+  color: TOKENS.DlColorSecondary700,
+  'font-size': '1rem',
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  'text-align': 'center',
+  'font-family': 'Open Sans',
+  'line-height': '1.625rem',
+  '@media(max-width: 479px)': {
+    'text-align': 'left',
+  },
+})
+
+const Card3 = styled('div')({
+  flex: '0 0 auto',
+  width: '30%',
+  display: 'flex',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRadius50,
+  'flex-direction': 'column',
+  'background-color': TOKENS.DlColorGrayWhite,
+  '@media(max-width: 991px)': {
+    width: '90%',
+  },
+})
+
+const Container07 = styled('div')({
+  flex: '0 0 auto',
+  width: '3rem',
+  height: '3rem',
+  display: 'flex',
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-image': 'linear-gradient(180deg, #34d399, #059669)',
+})
+
+const Icon04 = styled('svg')({
+  fill: TOKENS.DlColorGrayWhite,
+  width: '24px',
+  height: '24px',
+})
+
+const Text12 = styled('h6')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary100,
+  'margin-top': TOKENS.DlSpaceSpaceUnit,
+  'text-align': 'center',
+  'font-family': 'Open Sans',
+})
+
+const Text13 = styled('span')({
+  color: TOKENS.DlColorSecondary700,
+  'font-size': '1rem',
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  'text-align': 'center',
+  'font-family': 'Open Sans',
+  'line-height': '1.625rem',
+  '@media(max-width: 479px)': {
+    'text-align': 'left',
+  },
+})
+
+const WorkWithUs = styled('div')({
+  display: 'flex',
+  'margin-top': TOKENS.DlSpaceSpaceTripleunit,
+  'align-items': 'center',
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'row',
+  '@media(max-width: 767px)': {
+    'margin-top': TOKENS.DlSpaceSpaceTripleunit,
+    'flex-direction': 'column',
+  },
+})
+
+const Container08 = styled('div')({
+  flex: '0 0 auto',
+  width: '41%',
+  display: 'flex',
+  'align-items': 'flex-start',
+  'margin-left': 'auto',
+  'margin-right': 'auto',
+  'padding-left': TOKENS.DlSpaceSpaceUnit,
+  'padding-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  '@media(max-width: 767px)': {
+    width: '100%',
+    'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  },
+})
+
+const Container09 = styled('div')({
+  flex: '0 0 auto',
+  display: 'flex',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'margin-bottom': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Icon06 = styled('svg')({
+  fill: TOKENS.DlColorSecondary500,
+  width: '24px',
+  height: '24px',
+})
+
+const Text14 = styled('h3')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary400,
+  'font-weight': '600',
+  'margin-bottom': TOKENS.DlSpaceSpaceHalfunit,
+})
+
+const Text15 = styled('span')({
+  color: TOKENS.DlColorSecondary500,
+  'margin-top': TOKENS.DlSpaceSpaceUnit,
+  'margin-bottom': TOKENS.DlSpaceSpaceUnit,
+})
+
+const Text16 = styled('span')({
+  'font-weight': '300',
+  'white-space': 'normal',
+  'background-color': 'rgb(241, 245, 249)',
+})
+
+const Text17 = styled('span')({
+  color: TOKENS.DlColorSecondary400,
+  'font-style': 'normal',
+  'font-weight': '700',
+})
+
+const Container10 = styled('div')({
+  flex: '0 0 auto',
+  width: '33%',
+  display: 'flex',
+  position: 'relative',
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'flex-start',
+  'margin-left': 'auto',
+  'margin-right': 'auto',
+  'border-radius': TOKENS.DlRadiusRadiusRadius50,
+  'flex-direction': 'column',
+  'background-color': '#09A6E9',
+  '@media(max-width: 767px)': {
+    width: '100%',
+  },
+})
+
+const Container11 = styled('div')({
+  width: '100%',
+  height: '269px',
+  display: 'flex',
+  'align-items': 'flex-end',
+  'border-radius': '0px',
+  'flex-direction': 'column',
+  'background-size': 'cover',
+  'justify-content': 'flex-end',
+  'background-image':
+    "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80')",
+  'background-position': 'center',
+  'border-top-left-radius': TOKENS.DlRadiusRadiusRadius50,
+  'border-top-right-radius': TOKENS.DlRadiusRadiusRadius50,
+})
+
+const Image02 = styled('img')({
+  top: 'auto',
+  left: 'auto',
+  width: '100%',
+  bottom: '0px',
+  'object-fit': 'cover',
+  'margin-bottom': '-1px',
+})
+
+const Container12 = styled('div')({
+  display: 'flex',
+  padding: TOKENS.DlSpaceSpaceDoubleunit,
+  position: 'relative',
+  'align-items': 'flex-start',
+  'flex-direction': 'column',
+})
+
+const Text18 = styled('h4')(projectStyleVariants, {
+  'font-size': '1.25rem',
+})
+
+const Text19 = styled('span')({
+  color: '#f2f5f9ff',
+  'font-weight': '700',
+  'white-space': 'normal',
+})
+
+const Text20 = styled('span')({
+  color: '#f2f5f9ff',
+  'margin-top': TOKENS.DlSpaceSpaceUnit,
+})
+
+const Image03 = styled('img')({
+  top: 'auto',
+  left: 'auto',
+  right: '0px',
+  width: '100%',
+  bottom: '-1px',
+  position: 'absolute',
+  'object-fit': 'cover',
+})
+
+const Section2 = styled('div')({
+  width: '100%',
+  height: '1518px',
+  display: 'flex',
+  position: 'relative',
+  'align-self': 'center',
+  'align-items': 'center',
+  'padding-top': TOKENS.DlSpaceSpaceFiveunits,
+  'flex-direction': 'column',
+  'padding-bottom': TOKENS.DlSpaceSpaceFiveunits,
+  '@media(max-width: 991px)': {
+    'padding-left': TOKENS.DlSpaceSpaceDoubleunit,
+    'padding-right': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+})
+
+const Container13 = styled('div')({
+  width: '66%',
+  display: 'flex',
+  'align-items': 'center',
+  'padding-left': TOKENS.DlSpaceSpaceUnit,
+  'padding-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  '@media(max-width: 767px)': {
+    width: '100%',
+  },
+})
+
+const Text21 = styled('h2')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary400,
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  'text-align': 'center',
+  'line-height': '2.5rem',
+  '@media(max-width: 991px)': {
+    'text-align': 'center',
+  },
+})
+
+const Text22 = styled('span')({
+  'font-weight': '700',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Text23 = styled('span')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary700,
+  'text-align': 'center',
+  'margin-bottom': TOKENS.DlSpaceSpaceUnitandhalf,
+})
+
+const GrowingCompanySection = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  'max-width': '1320px',
+  'align-items': 'center',
+  'flex-direction': 'row',
+  'justify-content': 'center',
+  '@media(max-width: 767px)': {
+    'flex-direction': 'column',
+  },
+})
+
+const Image04 = styled('img')({
+  width: '33%',
+  'object-fit': 'cover',
+  'margin-left': 'auto',
+  'margin-right': 'auto',
+  'border-radius': TOKENS.DlRadiusRadiusRadius50,
+  '@media(max-width: 767px)': {
+    width: '100%',
+  },
+})
+
+const Container14 = styled('div')({
+  flex: '0 0 auto',
+  width: '41%',
+  display: 'flex',
+  'align-items': 'flex-start',
+  'padding-left': TOKENS.DlSpaceSpaceUnit,
+  'padding-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  'margin-right': 'auto',
+  'margin-left': 'auto',
+  '@media(max-width: 767px)': {
+    width: '100%',
+    'margin-top': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+  '@media(max-width: 479px)': {
+    'align-items': 'flex-start',
+  },
+})
+
+const Container15 = styled('div')({
+  flex: '0 0 auto',
+  width: '4rem',
+  height: '4rem',
+  display: 'flex',
+  'box-shadow':
+    '0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-color': TOKENS.DlColorPimary700,
+})
+
+const Icon08 = styled('svg')({
+  fill: TOKENS.DlColorPimary500,
+  width: '24px',
+  height: '24px',
+})
+
+const Text24 = styled('h3')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary400,
+  'margin-top': TOKENS.DlSpaceSpaceUnitandhalf,
+})
+
+const Text25 = styled('span')({
+  color: TOKENS.DlColorSecondary400,
+  'margin-top': TOKENS.DlSpaceSpaceUnit,
+  'margin-bottom': TOKENS.DlSpaceSpaceUnitandhalf,
+})
+
+const Container16 = styled('div')({
+  flex: '0 0 auto',
+  display: 'flex',
+  'align-items': 'flex-start',
+  'padding-top': TOKENS.DlSpaceSpaceHalfunit,
+  'flex-direction': 'row',
+  'padding-bottom': TOKENS.DlSpaceSpaceHalfunit,
+})
+
+const Container17 = styled('div')({
+  flex: '0 0 auto',
+  width: '2rem',
+  height: '2rem',
+  display: 'flex',
+  'align-items': 'center',
+  'margin-right': '0.75rem',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-color': TOKENS.DlColorPimary700,
+})
+
+const Icon10 = styled('svg')({
+  fill: TOKENS.DlColorPimary500,
+  width: '20px',
+  height: '20px',
+})
+
+const Text26 = styled('span')({
+  color: TOKENS.DlColorSecondary400,
+})
+
+const Container18 = styled('div')({
+  flex: '0 0 auto',
+  display: 'flex',
+  'align-items': 'flex-start',
+  'padding-top': TOKENS.DlSpaceSpaceHalfunit,
+  'flex-direction': 'row',
+  'padding-bottom': TOKENS.DlSpaceSpaceHalfunit,
+})
+
+const Container19 = styled('div')({
+  flex: '0 0 auto',
+  width: '2rem',
+  height: '2rem',
+  display: 'flex',
+  'align-items': 'center',
+  'margin-right': '0.75rem',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-color': TOKENS.DlColorPimary700,
+})
+
+const Icon12 = styled('svg')({
+  fill: TOKENS.DlColorPimary500,
+  width: '20px',
+  height: '20px',
+})
+
+const Text27 = styled('span')({
+  color: TOKENS.DlColorSecondary400,
+})
+
+const Container20 = styled('div')({
+  flex: '0 0 auto',
+  display: 'flex',
+  'align-items': 'flex-start',
+  'padding-top': TOKENS.DlSpaceSpaceHalfunit,
+  'flex-direction': 'row',
+  'padding-bottom': TOKENS.DlSpaceSpaceHalfunit,
+})
+
+const Container21 = styled('div')({
+  flex: '0 0 auto',
+  width: '2rem',
+  height: '2rem',
+  display: 'flex',
+  'align-items': 'center',
+  'margin-right': '0.75rem',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-color': TOKENS.DlColorPimary700,
+})
+
+const Icon15 = styled('svg')({
+  fill: TOKENS.DlColorPimary500,
+  width: '20px',
+  height: '20px',
+})
+
+const Text28 = styled('span')({
+  color: TOKENS.DlColorSecondary400,
+})
+
+const Text29 = styled('h3')(projectStyleVariants, {
+  left: '561px',
+  color: TOKENS.DlColorSecondary400,
+  position: 'absolute',
+  'text-align': 'center',
+  top: '1043px',
+})
+
+const Image05 = styled('img')({
+  width: '100px',
+  height: '11px',
+  'object-fit': 'cover',
+})
+
+const Image06 = styled('img')({
+  width: '311px',
+  'object-fit': 'cover',
+  left: '76px',
+  position: 'absolute',
+  height: '207px',
+  bottom: '160px',
+})
+
+const Image07 = styled('img')({
+  width: '311px',
+  'object-fit': 'cover',
+  left: '410px',
+  position: 'absolute',
+  height: '207px',
+  bottom: '158px',
+})
+
+const Image08 = styled('img')({
+  width: '311px',
+  'object-fit': 'cover',
+  left: '744px',
+  position: 'absolute',
+  height: '207px',
+  bottom: '156px',
+})
+
+const Image09 = styled('img')({
+  width: '311px',
+  'object-fit': 'cover',
+  position: 'absolute',
+  height: '207px',
+  bottom: '157px',
+  right: '128px',
+})
+
+const Section3 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  position: 'relative',
+  'align-items': 'center',
+  'padding-top': TOKENS.DlSpaceSpaceFiveunits,
+  'padding-left': TOKENS.DlSpaceSpaceTripleunit,
+  'padding-right': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'column',
+  'padding-bottom': TOKENS.DlSpaceSpaceFiveunits,
+  'background-color': TOKENS.DlColorSecondary100,
+  '@media(max-width: 991px)': {
+    'padding-left': TOKENS.DlSpaceSpaceDoubleunit,
+    'padding-right': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+})
+
+const Container22 = styled('div')({
+  width: '100%',
+  display: 'flex',
+  'max-width': '1320px',
+  'align-items': 'center',
+  'padding-left': TOKENS.DlSpaceSpaceUnit,
+  'padding-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    width: '100%',
+  },
+})
+
+const Text30 = styled('h6')(projectStyleVariants, {
+  'font-style': 'normal',
+  'font-weight': '700',
+})
+
+const Text32 = styled('h3')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+  '@media(max-width: 479px)': {
+    'text-align': 'center',
+  },
+})
+
+const Text33 = styled('span')(projectStyleVariants, {
+  width: '80%',
+  'text-align': 'center',
+  'font-weight': '300',
+  'margin-bottom': '0.25rem',
+})
+
+const Text34 = styled('span')({
+  'white-space': 'normal',
+})
+
+const Services = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  'margin-top': TOKENS.DlSpaceSpaceDoubleunit,
+  'align-items': 'flex-start',
+  'margin-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+  'flex-direction': 'row',
+  'justify-content': 'space-between',
+  '@media(max-width: 991px)': {
+    'align-items': 'center',
+    'flex-direction': 'column',
+  },
+})
+
+const Container23 = styled('div')({
+  flex: '0 0 auto',
+  width: '30%',
+  display: 'flex',
+  'align-items': 'center',
+  'padding-left': TOKENS.DlSpaceSpaceUnit,
+  'padding-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    width: '100%',
+    'padding-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+})
+
+const Container24 = styled('div')({
+  flex: '0 0 auto',
+  width: '48px',
+  height: '48px',
+  display: 'flex',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-color': '#f2f5f9ff',
+})
+
+const Icon17 = styled('svg')({
+  width: '24px',
+  height: '24px',
+})
+
+const Text35 = styled('h1')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+  'margin-top': TOKENS.DlSpaceSpaceUnitandhalf,
+  'font-weight': '600',
+})
+
+const Text36 = styled('span')({
+  color: 'rgba(100,116,139,1)',
+  'font-size': '1.25rem',
+  'text-align': 'center',
+})
+
+const Container25 = styled('div')({
+  flex: '0 0 auto',
+  width: '30%',
+  display: 'flex',
+  'align-items': 'center',
+  'padding-left': TOKENS.DlSpaceSpaceUnit,
+  'padding-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    width: '100%',
+    'padding-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+})
+
+const Container26 = styled('div')({
+  flex: '0 0 auto',
+  width: '48px',
+  height: '48px',
+  display: 'flex',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-color': '#f2f5f9ff',
+})
+
+const Icon19 = styled('svg')({
+  width: '24px',
+  height: '24px',
+})
+
+const Text37 = styled('h1')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+  'margin-top': TOKENS.DlSpaceSpaceUnitandhalf,
+  'font-weight': '600',
+})
+
+const Text39 = styled('span')({
+  color: 'rgba(100,116,139,1)',
+  'font-size': '1.25rem',
+  'text-align': 'center',
+})
+
+const Contact = styled('div')({
+  display: 'flex',
+  'margin-top': TOKENS.DlSpaceSpaceDoubleunit,
+  'align-items': 'center',
+  'margin-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+  'flex-direction': 'column',
+})
+
+const Text40 = styled('h2')({
+  color: TOKENS.DlColorGrayWhite,
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  '@media(max-width: 479px)': {
+    'text-align': 'center',
+  },
+})
+
+const Text41 = styled('span')(projectStyleVariants, {
+  color: 'rgba(255,255,255,0.75)',
+  width: '80%',
+  'text-align': 'center',
+  'font-weight': '300',
+})
+
+const Form = styled('div')({
+  flex: '0 0 auto',
+  width: '80%',
+  display: 'flex',
+  padding: TOKENS.DlSpaceSpaceTwoandhalf,
+  'max-width': '700px',
+  'margin-top': TOKENS.DlSpaceSpaceDoubleunit,
+  'align-items': 'flex-start',
+  'border-radius': TOKENS.DlRadiusRadiusRadius50,
+  'flex-direction': 'column',
+  'background-color': TOKENS.DlColorPimary800,
+  '@media(max-width: 767px)': {
+    width: '100%',
+  },
+})
+
+const Text42 = styled('h1')({
+  color: TOKENS.DlColorSecondary400,
+  'font-size': '1.5rem',
+  'font-weight': '600',
+  'line-height': '2rem',
+  '@media(max-width: 479px)': {
+    'text-align': 'left',
+  },
+})
+
+const Text43 = styled('span')(projectStyleVariants, {
+  color: 'rgba(100,116,139,1)',
+})
+
+const Text44 = styled('span')(projectStyleVariants, {
+  color: 'rgba(100,116,139,1)',
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  'margin-left': '0.25rem',
+  'margin-bottom': TOKENS.DlSpaceSpaceHalfunit,
+})
+
+const Textinput = styled('input')(projectStyleVariants, {
+  color: 'rgba(148, 163, 184, 1)',
+  width: '100%',
+  outline: '0',
+  padding: TOKENS.DlSpaceSpaceTriplequarter,
+  'box-shadow': '0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);',
+  transition: '0.3s',
+  'border-width': '0px',
+  'border-radius': TOKENS.DlRadiusRadiusRadius4,
+  '&:focus': {
+    color: TOKENS.DlColorSecondary500,
+    'box-shadow': '0 0 0 2px#4AA4E3',
+  },
+})
+
+const Text45 = styled('span')(projectStyleVariants, {
+  color: 'rgba(100,116,139,1)',
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  'margin-left': '0.25rem',
+  'margin-bottom': TOKENS.DlSpaceSpaceHalfunit,
+})
+
+const Textinput1 = styled('input')(projectStyleVariants, {
+  color: 'rgba(148, 163, 184, 1)',
+  width: '100%',
+  outline: '0',
+  padding: TOKENS.DlSpaceSpaceTriplequarter,
+  'box-shadow': '0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);',
+  transition: '0.3s',
+  'border-width': '0px',
+  'border-radius': TOKENS.DlRadiusRadiusRadius4,
+  '&:focus': {
+    color: TOKENS.DlColorSecondary500,
+    'box-shadow': '0 0 0 2px#4AA4E3',
+  },
+})
+
+const Text46 = styled('span')(projectStyleVariants, {
+  color: 'rgba(100,116,139,1)',
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  'margin-left': '0.25rem',
+  'margin-bottom': TOKENS.DlSpaceSpaceHalfunit,
+})
+
+const Textarea = styled('textarea')(projectStyleVariants, {
+  color: 'rgba(148, 163, 184, 1)',
+  width: '100%',
+  outline: '0',
+  padding: TOKENS.DlSpaceSpaceTriplequarter,
+  'box-shadow': '0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);',
+  transition: '0.3s',
+  'border-width': '0px',
+  'border-radius': TOKENS.DlRadiusRadiusRadius4,
+  '&:focus': {
+    color: TOKENS.DlColorSecondary500,
+    'box-shadow': '0 0 0 2px #4AA4E3',
+  },
+})
+
+const Container27 = styled('div')({
+  display: 'flex',
+  'align-self': 'center',
+  'margin-top': TOKENS.DlSpaceSpaceUnit,
+  'align-items': 'flex-start',
+  'flex-direction': 'column',
+})
+
+const Link = styled('a')({
+  display: 'contents',
+})
+
+const Component3 = styled('SecondaryButton')({
+  'text-decoration': 'none',
+})
+
+const Image10 = styled('img')({
+  top: 'auto',
+  left: 'auto',
+  right: '0px',
+  width: '100%',
+  bottom: '-1px',
+  position: 'absolute',
+  'object-fit': 'cover',
+})
